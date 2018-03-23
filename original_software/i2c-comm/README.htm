@@ -1,0 +1,40 @@
+<pre>
+This is the I2C communication software for
+I2C communication over RS232. 
+
+This directory contains the linux source code. The subdirectory
+linux_pre has a pre-compiled binary.
+
+The software is also available for Windows (dos command line
+utility), MacOS and Solaris. For details and pre-compiled
+binaries see subdirectory other_OS.
+Only windows requires a slightly modified source code. Mac and
+Solaris can use the Linux source code.
+
+i2c_rs232_pintest is a program to test the RS232 pins used for
+the purpose of the I2C communication.
+
+If you do not have anymore a RS232 port then just use a PL2303
+(or similar) USB to rs232 connector.
+
+
+
+
+I2C commands for the DC power supply:
+=====================================
+
+# set Imax to 0.20A:
+i2ctalk i=20
+# get current I value:
+i2ctalk i
+# store current settings
+i2ctalk s
+# set Umax to 2.1V:
+i2ctalk u=21
+# get current voltage value:
+i2ctalk u
+
+-------------------------------------------------
+All software is copyright GPL V2.
+Author: Guido Socher
+</pre>
